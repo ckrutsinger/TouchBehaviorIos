@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
-using Syncfusion.Maui.Toolkit.Hosting;
 
 namespace TouchBehaviorIos
 {
@@ -12,7 +11,6 @@ namespace TouchBehaviorIos
             builder
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
-                .ConfigureSyncfusionToolkit()
                 .ConfigureMauiHandlers(handlers =>
                 {
                 })
