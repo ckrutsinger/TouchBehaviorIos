@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pageModels="clr-namespace:TouchBehaviorIos.PageModels"             
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:pages="clr-namespace:TouchBehaviorIos.Pages"
              x:Class="TouchBehaviorIos.Pages.MainPage"
              x:DataType="pageModels:MainPageModel"
+             x:Name="mainPage"
              Title="Main Page">
 
 
@@ -12,6 +14,7 @@
         <Image Source="dotnet_bot">
             <Image.Behaviors>
                 <toolkit:TouchBehavior
+                    BindingContext="{Binding Path=BindingContext, Source={x:Reference mainPage}, x:DataType=pages:MainPage}"
                     LongPressCommand="{Binding LongPressCommand}"
                     />
             </Image.Behaviors>
