@@ -1,7 +1,4 @@
-﻿using TouchBehaviorIos.Models;
-using TouchBehaviorIos.PageModels;
-
-namespace TouchBehaviorIos.Pages
+﻿namespace TouchBehaviorIos.Pages
 {
     public partial class MainPage : ContentPage
     {
